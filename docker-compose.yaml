@@ -5,7 +5,7 @@ services:
     build:
       context: golang
     volumes:
-      - ./golang/:/app/
+      - ./golang/:/app # https://github.com/docker/compose/issues/7004
 
   typescript:
     build:
